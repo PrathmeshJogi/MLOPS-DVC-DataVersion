@@ -2,14 +2,14 @@ import pandas as pd
 import os
 # Create a sample with column names
 data = {'Name':['Alice' , 'Bob' , 'Charlie'],
-' Age' : [25, 30, 35],
+'Age' : [25, 30, 35],
 'City': ['New York', 'Los Angeles', 'Chicago']}
 
 df = pd.DataFrame(data)
 
 # Adding new row to df for V2
-# new_row_loc= {'Name': 'V2', 'Age': 20, 'City': 'Cityl'}
-# df.loc[len(df)] = new_row_loc
+new_row_loc= {'Name': 'GF1', 'Age': 20, 'City': 'Cityl'}
+df.loc[len(df)] = new_row_loc
 
 # $ Adding row to df for V3
 # new_row_loc2 = {'Name': 'V3', 'Age': 30,
