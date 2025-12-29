@@ -1,16 +1,14 @@
 1.Create git repo and clone it im local/
 2.Create code. py and add code to it. (it will save a csv file to a new"data" folder)
-Do a git add-commit-push before initializing dy_g.
-Now we do "dys init" (creates .dyogugce, .dys)
-Now do S3" (creates a new S3 directory)
-Now we do "dys remote add -d S3"
-Next "dug add data/"
-Now it will ask to do: ("git rm -r
---cached 'data"'
-and "git commit -m "stop tracking data"")
-Because initially we were tracking data/ folder from git so now we remove it for DVC to handle.
-Again we do "dyg add data/" (creates data.&.dy.c) then "git add . gitig.ngr.e dA.tA.Jyg"
-Now - "dyg commit" and then "dyg push"
+3.Do a git add-commit-push before initializing dvc.
+4.Now we do "dvc init" (creates .dyogugce, .dvc)
+5.Now do "mkdir S3" (creates a new S3 directory)
+6.Now we do "dvc remote add -d myremote S3"
+7.Next "dvc add data/"
+    Now it will ask to do: ("git rm -r --cached 'data'" and "git commit -m "stop tracking data"")
+    Because initially we were tracking data/ folder from git so now we remove it for DVC to handle.
+8.Again we do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
+Now - "dvc commit" and then "dvc push"
 Do a git add-commit-push to mark this stage as first version of data.
 Now make changes to code. py to append a new row in data, check changes via "dyg status"
 Again -
